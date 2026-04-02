@@ -26,7 +26,7 @@ valid_geometry = []
 # the model tolerance presents a threshold by which the 0 value should be found
 model_tolerance = 1e-6
 rhino_tolerance = sc.doc.ModelAbsoluteTolerance
-
+# the critics can be adjust to user perferences
 critics = {
     "max_edges": 1000,
     "min_tol": 0.1,
@@ -40,7 +40,7 @@ critics = {
 messages = {
     "succced": "The model has passed the criterial successfully.",
 }
-
+# the displayMessage can be adjust to user perferences
 displayMessage = {
     "tooMuchShort": "Short edge",
     "tooNearCrv": "Bad geometry",
