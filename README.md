@@ -1,53 +1,45 @@
-# Geo_Validator
-The **`Geo_Validator`** component is designed to **simplify and accelerate geometry preparation for Ladybug simulations**.
+## Geo Validator 🔷
+A component designed to validate building geometries and prepare models for reliable Ladybug environmental simulations.
 
-It helps users **reduce the time and difficulty of 3D model preparation** by automatically checking whether building geometries are suitable for **energy, solar radiation, and outdoor comfort analysis**.
+## 🧩 Overview
+A geometry validation component that checks building models and classifies them based on their suitability for environmental simulations.
 
-Instead of manually inspecting complex urban models, the component quickly detects common geometry problems such as:
+## 🎯 Project Goals
+The goal of this component was to automate geometry validation and reduce the complexity of preparing models for environmental simulations. Building on previous projects, I focused on improving simulation accuracy, speeding up model preparation, and lowering the barrier for non-expert users working with complex urban geometries.
 
-- invalid or open solids
-- non-planar geometries
-- very short edges
-- overly complex forms
-- insufficient building height
-- incorrect placement relative to the ground plane
-- problematic edge angles
-- surfaces that are too small for reliable simulation
+## 📂📘 Getting Started
+To get started, open the provided example files and follow the included instructions.
 
-By automatically classifying the input into **valid, suspicious, and invalid geometry**, the component significantly reduces **manual cleanup work**, making the modeling workflow faster and easier, especially for **large urban datasets**.
+## 🛠 Tech 
+- Python
+ 
+## ✨ Main Features
+- Automatic detection of invalid or open solids (e.g. curves or non-closed geometries)
+- Identification of non-planar geometries
+- Detection of short edges, very small surfaces, and tight angles that can increase simulation time
+- Evaluation of geometry complexity and edge conditions
+- Classification into valid, suspicious, and invalid geometry
+- Visual feedback and warnings directly in the Rhino environment
+- User-defined validation criteria and tolerance settings for flexibility across different project scales
+  
+## ⚠️ Challenges I Faced
+- Handling diverse and complex urban geometries across different scales while maintaining flexibility for various project types
 
-This helps:
-- reduce simulation errors
-- speed up model preparation
-- simplify large-scale geometry cleaning
-- improve workflow reliability
-- lower the technical barrier for new users
+## 🤖 How I Used AI
+- Supported classification strategies for simulation-ready geometry
+- Assisted in structuring the workflow for better usability
 
----
 
-## How to Use
-### 1. Connect the building geometry
-- Input closed **Breps**, massing models, or imported urban blocks
-
-### 2. Run the component
-- The geometry will be automatically checked against predefined quality criteria
-
-### 3. Review the outputs
-- **Valid geometry** → ready for Ladybug
-- **Suspicious geometry** → recommended for review
-- **Invalid geometry** → should be removed or fixed
-
-### 4. Check Rhino warnings
-- Text markers highlight problematic areas directly in the Rhino model
-
-### 5. Optional cleanup
-- Enable automatic repositioning to the ground plane if required
+## 📚 Research Purpose
+This tool was developed to improve the modeling process of Ladybug simulations, such as UTCI, MRT, and energy analysis, which can be challenging in complex urban environments.
 
 ---
 
-## Citation and Project Use
+## 🧾Citation and Project Use
 If you use this tool in research, publications, teaching, or professional projects, please cite the repository and kindly inform the author.
 
-**Author:** Hossein Ghandi
+**Author:**
+Hossein Ghandi 🧑‍💻
+📧 Email: [ghandih22@email.com](mailto:ghandih22@email.com)
 
 Feedback, case studies, and derived applications are highly appreciated and help support future development of the workflow.
